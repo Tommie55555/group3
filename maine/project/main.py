@@ -57,7 +57,7 @@ def identify_color(rgb): #do not use this function on people or we'll get sued
         return "purple"
     elif green > 0.25 * red and green < 0.75 * red and blue < 0.25 * red:
         return "brown"
-    elif red > 2 * (green + blue): # ORDER MATTERS! This remain *after* checking for brown.
+    elif red > 2 * (green + blue): # ORDER MATTERS! This should remain *after* checking for brown.
         return "red"
     elif green > 2 * (red + blue):
         return "green"
